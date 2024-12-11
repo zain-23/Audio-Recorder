@@ -29,7 +29,9 @@ const AudioRecorder = () => {
       setMediaRecorder(recorder);
       setIsRecording(true);
       recorder.start(); // Start recording
-    } catch (error) {}
+    } catch (error) {
+      alert(error);
+    }
   };
 
   // Stop recording
